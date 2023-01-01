@@ -7,10 +7,10 @@ namespace ProductPromotion.Repositories
 {
     public class ContactRepository : IContactRepository
     {
-        protected readonly Context _dbContext;
+        private readonly Context _dbContext;
         public ContactRepository(Context dbContext)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _dbContext = dbContext;
         }
         public async Task<Contact> SendMessage(Contact contact)
         {
@@ -24,6 +24,7 @@ namespace ProductPromotion.Repositories
             newContact.Email = address;
             newContact.Message = address;
             newContact.Name = address;
+
             return newContact;
         }
     }

@@ -31,7 +31,7 @@ namespace ProductPromotion.Pages.Product
                 return Page();
             }
 
-            //await _contactRepository.SendMessage(Contact);
+            await _contactRepository.SendMessage(Contact);
             return RedirectToPage("Confirmation", "Contact");
         }
 
@@ -42,7 +42,7 @@ namespace ProductPromotion.Pages.Product
                 return Page();
             }
 
-            //await _contactRepository.Subscribe(address);
+            await _contactRepository.Subscribe(address);
             return RedirectToPage("Confirmation", "Subscribe");
         }
     }
