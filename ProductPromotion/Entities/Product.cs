@@ -12,6 +12,8 @@ namespace ProductPromotion.Entities
         [Required, StringLength(255)]
         public string Description { get; set; }
 
+        public string Slug { get; set; }
+        public string ImageFile { get; set; }
         public int UnitPrice { get; set; }
 
         public int CategoryId { get; set; }
