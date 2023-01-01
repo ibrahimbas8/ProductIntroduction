@@ -6,15 +6,16 @@ using System;
 
 namespace ProductPromotion.Pages.Product
 {
-    public class DetailsModel : PageModel
+    public class DeleteModel : PageModel
     {
         private readonly IProductRepository _productRepository;
 
-        public DetailsModel(IProductRepository productRepository)
+        public DeleteModel(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
 
+        [BindProperty]
         public Entities.Product Product { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? productId)
@@ -30,6 +31,17 @@ namespace ProductPromotion.Pages.Product
                 return NotFound();
             }
             return Page();
+        }
+
+        public async Task<IActionResult> OnPostAsync(int? productId)
+        {
+            if (productId == null)
+            {
+                return NotFound();
+            }
+
+            await _productRepository.DeleteAsync(Product);
+            return RedirectToPage("./Index");
         }
     }
 }
