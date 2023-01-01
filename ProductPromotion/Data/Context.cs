@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ProductPromotion.Entities;
 using System.Collections.Generic;
 
 namespace ProductPromotion.Data
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext
     {
         public Context(DbContextOptions<Context> options)
             : base(options)
