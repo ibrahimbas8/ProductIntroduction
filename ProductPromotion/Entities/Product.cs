@@ -6,13 +6,15 @@ namespace ProductPromotion.Entities
     {
         public int Id { get; set; }
 
+        [Required, StringLength(40)]
+        public string Slug { get; set; }
+
         [Required, StringLength(80)]
         public string Name { get; set; }
 
-        [Required, StringLength(255)]
+        public string Summary { get; set; }
         public string Description { get; set; }
 
-        public string Slug { get; set; }
         public string ImageFile { get; set; }
         public int UnitPrice { get; set; }
 

@@ -57,10 +57,36 @@ namespace ProductPromotion.Data
         {
             return new List<Product>()
             {
-                new Product() { Name = "IPhone X", Description = "IPhone X Well Done", CategoryId = 1, UnitPrice=2000 },
-                new Product() { Name = "Samsung 10", Description = "Samsung X Well Done", CategoryId = 1, UnitPrice=2500 },
-                new Product() { Name = "Huawei Plus", Description = "Huawei X Well Done", CategoryId = 2, UnitPrice=2800}
-            };
+                new Product()
+                {
+                    Name = "IPhone X",
+                    Slug = "iphone-x",
+                    Summary = "A seasonal delight we offer every autumn.  Pumpking bread with just a bit of spice, cream cheese frosting with just a hint of home.",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "pumpkinbread.png",
+                    CategoryId = 1,
+                    UnitPrice = 15000
+                },
+                new Product()
+                {
+                    Name = "Samsung 10",
+                    Slug = "samsung-10",
+                    Summary = "A seasonal delight we offer every autumn.  Pumpking bread with just a bit of spice, cream cheese frosting with just a hint of home.",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "ground.png",
+                    CategoryId = 1,
+                    UnitPrice = 12000
+                },
+                new Product()
+                {
+                    Name = "Huawei Plus",
+                    Slug = "hua-plus",
+                    Summary = "A seasonal delight we offer every autumn.  Pumpking bread with just a bit of spice, cream cheese frosting with just a hint of home.",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "granola.png",
+                    CategoryId = 2,
+                    UnitPrice = 19000
+                }  };
         }
     }
 }
