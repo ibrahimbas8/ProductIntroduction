@@ -31,6 +31,8 @@ namespace ProductPromotion
                 c.UseSqlServer(Configuration.GetConnectionString("ProductDbConnection")));
             // add repository dependecy
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IContactRepository, ContactRepository>();
+
             services.AddRazorPages();
         }
 
