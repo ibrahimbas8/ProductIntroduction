@@ -4,9 +4,11 @@ using ProductPromotion.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ProductPromotion.Pages.Product
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly IProductRepository _productRepository;
