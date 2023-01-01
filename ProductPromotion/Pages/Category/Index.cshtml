@@ -1,0 +1,27 @@
+﻿@page
+@model ProductPromotion.Pages.Category.IndexModel
+@{
+    ViewData["Title"] = "Category Index";
+}
+
+<h1>Category List</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model.CategoryList)
+        {
+            <tr>
+                <th scope="row">@category.Id</th>
+                <td>@category.Name</td>
+                <td>@category.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
