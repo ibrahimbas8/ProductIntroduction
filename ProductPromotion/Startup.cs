@@ -45,14 +45,13 @@ namespace ProductPromotion
         private void ConfigureAspnetRunServices(IServiceCollection services)
         {
             #region database services
-
+            //// add database dependecy
             services.AddDbContext<Context>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("ProductDbConnection")));
 
-            //// add database dependecy
-            //services.AddDbContext<AspnetRunContext>(c =>
-            //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));
-
+            //// use in-memory database
+            //services.AddDbContext<Context>(c =>
+            //    c.UseInMemoryDatabase("ProductDbConnection"));
             #endregion
 
             #region identity services
