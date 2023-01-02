@@ -9,8 +9,8 @@
         <div class="col">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    <li class="breadcrumb-item"><a asp-page="Index">Anasayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sepet</li>
                 </ol>
             </nav>
         </div>
@@ -25,10 +25,10 @@
                     <thead>
                         <tr>
                             <th scope="col"> </th>
-                            <th scope="col">Product</th>
-                            <th scope="col">Available</th>
-                            <th scope="col" class="text-center">Quantity</th>
-                            <th scope="col" class="text-right">Price</th>
+                            <th scope="col">Ürün</th>
+                            <th scope="col">Durum</th>
+                            <th scope="col" class="text-center">Miktar</th>
+                            <th scope="col" class="text-right">Fiyat</th>
                             <th> </th>
                         </tr>
                     </thead>
@@ -38,13 +38,13 @@
                             <tr>
                                 <td><img src="https://dummyimage.com/50x50/55595c/fff" /></td>
                                 <td>@cartItem.Product.Name</td>
-                                <td>In stock</td>
+                                <td>Stokta</td>
                                 <td><input class="form-control" type="text" value="@cartItem.Quantity" /></td>
                                 <td class="text-right">@(cartItem.Price * cartItem.Quantity) ₺</td>
                                 <td class="text-right">
 
                                     <form asp-page-handler="removetocart" method="post">
-                                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                        <button class="btn btn-sm btn-outline-danger"><i class="fa fa-trash"></i></button>
                                         <input type="hidden" asp-for="@Model.Cart.Id" name="cartId" />
                                         <input type="hidden" asp-for="@cartItem.Id" name="cartItemId" />
                                     </form>
@@ -58,7 +58,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><strong>Total</strong></td>
+                            <td><strong>Toplam</strong></td>
                             <td class="text-right"><strong>@Model.Cart.TotalPrice ₺</strong></td>
                         </tr>
                     </tbody>
@@ -68,10 +68,10 @@
         <div class="col mb-2">
             <div class="row">
                 <div class="col-sm-12  col-md-6">
-                    <a asp-page="Product" class="btn btn-lg btn-block btn-success">Continue Shopping</a>
+                    <a asp-page="Product" class="btn btn-lg btn-block btn-outline-success">Alışverişe Devam Et</a>
                 </div>
                 <div class="col-sm-12 col-md-6 text-right">
-                    <a asp-page="CheckOut" class="btn btn-lg btn-block btn-danger text-uppercase">CheckOut</a>
+                    <a asp-page="CheckOut" class="btn btn-lg btn-block btn-outline-danger text-uppercase">Öde</a>
                 </div>
             </div>
         </div>

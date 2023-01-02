@@ -16,7 +16,7 @@ namespace ProductPromotion.Pages.Components.PopularProducts
 
         public async Task<IViewComponentResult> InvokeAsync(int count)
         {
-            var productList = await _productRepository.GetProductListAsync();
+            var productList = await _productRepository.GetProducts();
             var countedProducts = productList.Take(count);
 
             return View(countedProducts);
