@@ -3,6 +3,9 @@ using ProductPromotion.Repositories.Interfaces;
 using System.Threading.Tasks;
 using System;
 using ProductPromotion.Data;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProductPromotion.Repositories
 {
@@ -20,6 +23,15 @@ namespace ProductPromotion.Repositories
             _dbContext.Orders.Add(order);
             await _dbContext.SaveChangesAsync();
             return order;
+        }
+
+        public async Task<IEnumerable<Order>> GetOrdersByUserName(string userName)
+        {
+            var orderList = await _dbContext.Orders
+                            .Where(o => o.UserName == userName)
+                            .ToListAsync();
+
+            return orderList;
         }
     }
 }
