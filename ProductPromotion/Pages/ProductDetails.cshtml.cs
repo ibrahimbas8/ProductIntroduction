@@ -7,28 +7,9 @@ namespace ProductPromotion
 {
     public class ProductDetailModel : PageModel
     {
-        private readonly IProductRepository _productRepository;
-
-        public ProductDetailModel(IProductRepository productRepository)
+        public void OnGet()
         {
-            _productRepository = productRepository;
-        }
 
-        public Entities.Product Product { get; set; }
-
-        public async Task<IActionResult> OnGetAsync(int? productId)
-        {
-            if (productId == null)
-            {
-                return NotFound();
-            }
-
-            Product = await _productRepository.GetProductByIdAsync(productId.Value);
-            if (Product == null)
-            {
-                return NotFound();
-            }
-            return Page();
         }
     }
 }

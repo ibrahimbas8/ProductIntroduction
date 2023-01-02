@@ -1,20 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ProductPromotion.Pages
+namespace ProductPromotion
 {
     public class ConfirmationModel : PageModel
     {
-        public string Message { get; set; }
-
-        public void OnGetContact()
+        public void OnGet()
         {
-            Message = "Your email was sent.";
-        }
 
-        public void OnGetSubscribe()
-        {
-            Message = "You have been added to the mailing list.";
         }
     }
 }
