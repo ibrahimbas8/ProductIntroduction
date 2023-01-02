@@ -29,7 +29,8 @@
         {
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a asp-page="./Details" asp-route-productId="@product.Id"><img asp-append-version="true" class="card-img-top" src="~/images/menu/@product.ImageFile" alt=""></a>                    <div class="card-body">
+                    <a asp-page="./Details" asp-route-productId="@product.Id"><img asp-append-version="true" class="card-img-top" src="~/images/menu/@product.ImageFile" alt=""></a>
+                    <div class="card-body">
                         <h4 class="card-title">
                             <a asp-page="./Details" asp-route-productId="@product.Id" class="color-main">@product.Name</a>
                         </h4>
