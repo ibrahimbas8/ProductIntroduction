@@ -21,6 +21,7 @@ namespace ProductPromotion.Repositories
         {
             var cart = _dbContext.Carts
                         .Include(c => c.Items)
+                        .ThenInclude(i => i.Product)
                         .FirstOrDefault(c => c.UserName == userName);
 
             if (cart != null)
