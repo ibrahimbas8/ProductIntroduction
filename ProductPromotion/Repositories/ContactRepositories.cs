@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System;
 using ProductPromotion.Data;
+using ProductPromotion.Repositories.Interfaces;
 
 namespace ProductPromotion.Repositories
 {

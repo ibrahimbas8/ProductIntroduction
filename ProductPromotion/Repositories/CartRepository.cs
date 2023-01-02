@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System;
 using ProductPromotion.Data;
 using System.Linq;
+using ProductPromotion.Repositories.Interfaces;
 
 namespace ProductPromotion.Repositories
 {

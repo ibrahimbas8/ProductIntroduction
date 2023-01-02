@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProductPromotion.Data;
 using ProductPromotion.Repositories;
+using ProductPromotion.Repositories.Interfaces;
 
 namespace ProductPromotion
 {
@@ -24,6 +25,11 @@ namespace ProductPromotion
         {
             services.AddDbContext<Context>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("ProductDbConnection")));
+
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IContactRepository, ContactRepository>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
