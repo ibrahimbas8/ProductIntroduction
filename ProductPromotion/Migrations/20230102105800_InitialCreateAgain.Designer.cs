@@ -10,8 +10,8 @@ using ProductPromotion.Data;
 namespace ProductPromotion.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230101234606_ContactAdded")]
-    partial class ContactAdded
+    [Migration("20230102105800_InitialCreateAgain")]
+    partial class InitialCreateAgain
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -229,6 +229,9 @@ namespace ProductPromotion.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
