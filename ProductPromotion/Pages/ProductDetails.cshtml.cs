@@ -4,13 +4,13 @@ using ProductPromotion.Repositories;
 using System.Threading.Tasks;
 using System;
 
-namespace ProductPromotion.Pages.Product
+namespace ProductPromotion
 {
-    public class DetailsModel : PageModel
+    public class ProductDetailModel : PageModel
     {
         private readonly IProductRepository _productRepository;
 
-        public DetailsModel(IProductRepository productRepository)
+        public ProductDetailModel(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }

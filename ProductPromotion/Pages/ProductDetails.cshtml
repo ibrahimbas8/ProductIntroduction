@@ -1,5 +1,5 @@
 ﻿@page "/Product/{productId}"
-@model ProductPromotion.Pages.Product.DetailsModel
+@model ProductPromotion.ProductDetailModel
 @{
     ViewData["Title"] = "Product Details";
 }
@@ -42,7 +42,8 @@
     </div>
 </div>
 
-<div>
-    <a asp-page="./Edit" asp-route-productId="@Model.Product.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
-</div>
+@section FooterCustomize {
+        <p><a class="text-white" href="#">Computers</a></p>
+        <p><a class="text-white" href="#">Smart Home Products</a></p>
+        <p><a class="text-white" href="#">Movies & Television</a></p>
+}

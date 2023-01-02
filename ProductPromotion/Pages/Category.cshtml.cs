@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
 
-namespace ProductPromotion.Pages.Category
+namespace ProductPromotion
 {
-    public class IndexModel : PageModel
+    public class CategoryModel : PageModel
     {
         private readonly IProductRepository _productRepository;
 
-        public IndexModel(IProductRepository productRepository)
+        public CategoryModel(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
