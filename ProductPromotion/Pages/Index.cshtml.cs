@@ -15,13 +15,12 @@ namespace ProductPromotion.Pages
             _productRepository = productRepository;
         }
 
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; }
         public IEnumerable<Entities.Product> ProductList { get; set; } = new List<Entities.Product>();
 
         public async Task<IActionResult> OnGetAsync()
         {
-            ProductList = await _productRepository.GetProductByNameAsync(SearchTerm);
+
+            ProductList = await _productRepository.GetProductListAsync();
             return Page();
         }
     }
