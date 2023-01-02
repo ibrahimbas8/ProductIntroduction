@@ -37,7 +37,7 @@ namespace ProductPromotion.Pages.Product
 
         public async Task<IActionResult> OnPostSubscribeAsync(string address)
         {
-            if (!ModelState.IsValid)
+            if (string.IsNullOrWhiteSpace(address))
             {
                 return Page();
             }
