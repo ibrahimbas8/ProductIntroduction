@@ -1,4 +1,5 @@
-﻿using ProductPromotion.Entities;
+﻿
+using ProductPromotion.Entities;
 using System.Threading.Tasks;
 
 namespace ProductPromotion.Repositories.Interfaces

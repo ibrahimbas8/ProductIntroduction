@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProductPromotion.Repositories;
-using System.Threading.Tasks;
-using System;
+using ProductPromotion.Repositories.Interfaces;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProductPromotion.Pages.Components.PopularProducts
 {

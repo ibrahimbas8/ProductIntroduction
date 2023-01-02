@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProductPromotion.Entities;
+using ProductPromotion.Repositories.Interfaces;
 using System.Threading.Tasks;
-using System;
-using ProductPromotion.Repositories;
 
 namespace ProductPromotion.Pages
 {

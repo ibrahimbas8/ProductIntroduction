@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
-using ProductPromotion.Repositories;
-using System;
+using ProductPromotion.Repositories.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProductPromotion.Pages
@@ -15,7 +12,7 @@ namespace ProductPromotion.Pages
 
         public IndexModel(IProductRepository productRepository)
         {
-            _productRepository = productRepository ;
+            _productRepository = productRepository;
         }
 
         [BindProperty(SupportsGet = true)]
