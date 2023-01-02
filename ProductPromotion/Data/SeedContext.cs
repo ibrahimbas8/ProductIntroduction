@@ -50,19 +50,19 @@ namespace ProductPromotion.Data
             {
                 new Category()
                 {
-                    Name = "White Appliances",
+                    Name = "Beyaz Eşya",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.",
                     ImageName = "one"
                 },
                 new Category()
                 {
-                    Name = "Smart Watches",
+                    Name = "Akıllı Telefon",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.",
                     ImageName = "two"
                 },
                 new Category()
                 {
-                    Name = "Home & Kitchen",
+                    Name = "Ev & Mutfak",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.",
                     ImageName = "tree"
                 }
