@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System;
 using ProductPromotion.Data;
 using System.Linq;
+using ProductPromotion.Repositories.Interfaces;
 
 namespace ProductPromotion.Repositories
 {
@@ -14,7 +15,7 @@ namespace ProductPromotion.Repositories
 
         public ProductRepository(Context dbContext)
         {
-            _dbContext = dbContext;
+            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         }
 
         public async Task<IEnumerable<Product>> GetProductListAsync()

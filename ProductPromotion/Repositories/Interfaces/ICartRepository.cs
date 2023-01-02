@@ -1,7 +1,7 @@
 ﻿using ProductPromotion.Entities;
 using System.Threading.Tasks;
 
-namespace ProductPromotion.Repositories
+namespace ProductPromotion.Repositories.Interfaces
 {
     public interface ICartRepository
     {
