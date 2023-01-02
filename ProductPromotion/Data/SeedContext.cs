@@ -80,7 +80,7 @@ namespace ProductPromotion.Data
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-1.png",
                     CategoryId = 1,
-                    UnitPrice = 15000
+                    Price = 18000.00,
                 },
                 new Product()
                 {
@@ -89,7 +89,7 @@ namespace ProductPromotion.Data
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-2.png",
                     CategoryId = 1,
-                    UnitPrice = 12000
+                    Price = 11000.00,
                 },
                 new Product()
                 {
@@ -98,14 +98,15 @@ namespace ProductPromotion.Data
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-3.png",
                     CategoryId = 2,
-                    UnitPrice = 19000
+                    Price = 14000.00,
                 },new Product()
                 {
                     Name = "Xiaomi Mi 9",
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless, OLED screen, wireless charging and facial recognition cameras.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-4.png",
-                    CategoryId = 1
+                    CategoryId = 1,
+                    Price = 7000.00,
                 },
                 new Product()
                 {
@@ -113,7 +114,8 @@ namespace ProductPromotion.Data
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless, OLED screen, wireless charging and facial recognition cameras.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-5.png",
-                    CategoryId = 1
+                    CategoryId = 1,
+                    Price = 9500.00
                 },
                 new Product()
                 {
@@ -121,7 +123,8 @@ namespace ProductPromotion.Data
                     Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless, OLED screen, wireless charging and facial recognition cameras.",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-6.png",
-                    CategoryId = 1
+                    CategoryId = 1,
+                    Price = 9200.00
                 }
             };
         }

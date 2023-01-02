@@ -13,7 +13,7 @@ namespace ProductPromotion.Entities
         public string Description { get; set; }
 
         public string ImageFile { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }
