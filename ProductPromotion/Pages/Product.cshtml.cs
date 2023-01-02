@@ -11,9 +11,12 @@ namespace ProductPromotion
     public class ProductModel : PageModel
     {
         private readonly IProductRepository _productRepository;
-        public ProductModel(IProductRepository productRepository)
+        private readonly ICartRepository _cartRepository;
+
+        public ProductModel(IProductRepository productRepository, ICartRepository cartRepository)
         {
             _productRepository = productRepository;
+            _cartRepository = cartRepository;
         }
 
         public IEnumerable<Entities.Category> CategoryList { get; set; } = new List<Entities.Category>();
@@ -38,6 +41,12 @@ namespace ProductPromotion
             }
 
             return Page();
+        }
+
+        public async Task<IActionResult> OnPostAddToCartAsync(int productId)
+        {
+            await _cartRepository.AddItem("test", productId);
+            return RedirectToPage("Cart");
         }
     }
 }

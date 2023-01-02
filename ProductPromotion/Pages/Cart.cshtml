@@ -10,7 +10,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
                 </ol>
             </nav>
         </div>
@@ -59,7 +59,7 @@
                             <td></td>
                             <td></td>
                             <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>@Model.TotalPrice ₺</strong></td>
+                            <td class="text-right"><strong>@Model.Cart.TotalPrice ₺</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -71,7 +71,7 @@
                     <a asp-page="Product" class="btn btn-lg btn-block btn-success">Continue Shopping</a>
                 </div>
                 <div class="col-sm-12 col-md-6 text-right">
-                    <a asp-page="CheckOut" asp-route-cartId="@Model.Cart.Id" class="btn btn-lg btn-block btn-danger text-uppercase">CheckOut</a>
+                    <a asp-page="CheckOut" class="btn btn-lg btn-block btn-danger text-uppercase">CheckOut</a>
                 </div>
             </div>
         </div>

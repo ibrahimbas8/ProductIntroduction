@@ -12,7 +12,7 @@ namespace ProductPromotion.Repositories
 
         public OrderRepository(Context dbContext)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+            _dbContext = dbContext;
         }
 
         public async Task<Order> CheckOut(Order order)
