@@ -1,4 +1,4 @@
-using System;
+    using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,8 +38,6 @@ namespace ProductPromotion
             });
 
             services.AddRazorPages();
-
-            services.AddMvc();
         }
 
         private void ConfigureAspnetRunServices(IServiceCollection services)
@@ -57,7 +55,7 @@ namespace ProductPromotion
             #region identity services
 
             services.AddDefaultIdentity<IdentityUser>()
-                 //.AddDefaultUI(UIFramework.Bootstrap4)
+                 .AddDefaultUI()
                  .AddEntityFrameworkStores<Context>();
 
             services.Configure<IdentityOptions>(options =>
@@ -98,10 +96,10 @@ namespace ProductPromotion
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCookiePolicy();
 
-            app.UseRouting();
             app.UseAuthentication();
-
+            app.UseRouting();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
