@@ -46,7 +46,6 @@ namespace ProductPromotion
         {
             #region database services
 
-            // use in-memory database
             services.AddDbContext<Context>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("ProductDbConnection")));
 
