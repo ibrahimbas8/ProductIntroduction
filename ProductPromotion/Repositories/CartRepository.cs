@@ -37,21 +37,18 @@ namespace ProductPromotion.Repositories
             return newCart;
         }
 
-        public async Task AddItem(string userName, int productId)
+        public async Task AddItem(string userName, int productId, int quantity = 1, string color = "Black")
         {
             var cart = await GetCartByUserName(userName);
-
             cart.Items.Add(
                     new CartItem
                     {
-                        Id = productId,
-                        Color = "Black",
-                        Price = 10,
-                        Quantity = 1
+                        ProductId = productId,
+                        Color = color,
+                        Price = _dbContext.Products.FirstOrDefault(p => p.Id == productId).Price,
+                        Quantity = quantity
                     }
-                );
-
-            _dbContext.Entry(cart).State = EntityState.Modified;
+                ); _dbContext.Entry(cart).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
 

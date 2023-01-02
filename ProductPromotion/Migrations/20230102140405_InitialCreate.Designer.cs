@@ -10,7 +10,7 @@ using ProductPromotion.Data;
 namespace ProductPromotion.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230102125249_InitialCreate")]
+    [Migration("20230102140405_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -353,8 +353,8 @@ namespace ProductPromotion.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Summary")
                         .HasColumnType("nvarchar(max)");
