@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System;
 using ProductPromotion.Repositories;
 
-namespace ProductPromotion.Pages.Product
+namespace ProductPromotion.Pages
 {
     public class ContactModel : PageModel
     {
