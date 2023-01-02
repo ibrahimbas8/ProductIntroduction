@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using ProductPromotion.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,18 @@ namespace ProductPromotion.Pages
 {
     public class IndexModel : PageModel
     {
-        public IndexModel()
-        {
+        private readonly IProductRepository _productRepository;
 
+        public IndexModel(IProductRepository productRepository)
+        {
+            _productRepository = productRepository ;
         }
+        public IEnumerable<Entities.Category> CategoryList { get; set; } = new List<Entities.Category>();
 
-        public void OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
-
+            CategoryList = await _productRepository.GetCategories();
+            return Page();
         }
     }
 }
