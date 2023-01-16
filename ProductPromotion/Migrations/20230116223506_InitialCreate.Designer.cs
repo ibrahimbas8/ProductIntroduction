@@ -10,8 +10,8 @@ using ProductPromotion.Data;
 namespace ProductPromotion.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230102155134_Initial")]
-    partial class Initial
+    [Migration("20230116223506_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
