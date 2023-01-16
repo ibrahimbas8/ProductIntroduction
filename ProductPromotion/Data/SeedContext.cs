@@ -50,7 +50,7 @@ namespace ProductPromotion.Data
             {
                 new Category()
                 {
-                    Name = "Beyaz Eşya",
+                    Name = "Kulaklık",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.",
                     ImageName = "one"
                 },
@@ -62,7 +62,7 @@ namespace ProductPromotion.Data
                 },
                 new Category()
                 {
-                    Name = "Ev & Mutfak",
+                    Name = "Bilgisayar",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.",
                     ImageName = "tree"
                 }
@@ -75,56 +75,92 @@ namespace ProductPromotion.Data
             {
                 new Product()
                 {
-                    Name = "IPhone X",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
+                    Name = "IPhone 14",
+                    Summary = "IPhone 14 en yeni telefonu ile sizlerle. 128 GB versiyon ile hemen alın",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-1.png",
-                    Price = 18000.00M,
-                    CategoryId = 1
-                },
-                new Product()
-                {
-                    Name = "Samsung 10",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
-                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
-                    ImageFile = "product-2.png",
-                    Price = 12000.00M,
-                    CategoryId = 1
-                },
-                new Product()
-                {
-                    Name = "Huawei Plus",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
-                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
-                    ImageFile = "product-3.png",
-                    Price = 14500.00M,
+                    Price = 30999.00M,
                     CategoryId = 2
                 },
                 new Product()
                 {
-                    Name = "Xiaomi Mi 9",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
+                    Name = "IPhone 11",
+                    Summary = "IPhone 11 büyük indirim ile sizlerle. 128 GB versiyon ile hemen alın",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-2.png",
+                    Price = 12000.00M,
+                    CategoryId = 2
+                },
+                new Product()
+                {
+                    Name = "Samsung Galaxy S20",
+                    Summary = "Samsung Galaxy S20 FE 256 GB Snapdragon (Samsung Türkiye Garantili)",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-3.png",
+                    Price = 11789.00M,
+                    CategoryId = 2
+                },
+                new Product()
+                {
+                    Name = "Samsung Galaxy A33",
+                    Summary = "Samsung Galaxy A33 5G 128 GB (Samsung Türkiye Garantili)",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-4.png",
-                    Price = 7400.00M,
-                    CategoryId = 1
+                    Price = 8938.00M,
+                    CategoryId = 2
                 },
                 new Product()
                 {
-                    Name = "HTC U11+ Plus",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
+                    Name = "Xiaomi Redmi Note 11 Pro",
+                    Summary = "Xiaomi Redmi Note 11 Pro 128 GB 8 GB Ram (Xiaomi Türkiye Garantili)",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
                     ImageFile = "product-5.png",
-                    Price = 9200.00M,
+                    Price = 8699.00M,
+                    CategoryId = 2
+                },
+                new Product()
+                {
+                    Name = "Xiaomi Redmi 9c",
+                    Summary = "Xiaomi Redmi 9c 32 GB (Xiaomi Türkiye Garantili)",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-6.png",
+                    Price = 3299.00M,
+                    CategoryId = 2
+                },
+                new Product()
+                {
+                    Name = "Huawei Matebook D15",
+                    Summary = "Huawei Matebook D15 AMD Ryzen 5 5500U 8GB 512GB SSD Windows 11 Home 15.6\" FHD Taşınabilir Bilgisayar",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-7.png",
+                    Price = 14200.00M,
+                    CategoryId = 3
+                },
+                new Product()
+                {
+                    Name = "Apple MacBook Air M1",
+                    Summary = "Apple MacBook Air M1 Çip 8GB 256GB SSD macOS 13\" QHD Taşınabilir Bilgisayar Altın MGND3TU/A",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-8.png",
+                    Price = 20000.00M,
+                    CategoryId = 3
+                },
+                new Product()
+                {
+                    Name = "JBL C100SIUBLK",
+                    Summary = "JBL C100SIUBLK Mikrofonlu Kulakiçi Kulaklık CT IE Siyah",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
+                    ImageFile = "product-9.png",
+                    Price = 199.00M,
                     CategoryId = 1
                 },
                 new Product()
                 {
-                    Name = "LG G7 ThinQ",
-                    Summary = "This phone is the company's biggest change to its flagship smartphone in years. It includes a borderless.",
+                    Name = "Anker Soundcore Life Q30 Bluetooth Kablosuz Kulaklık",
+                    Summary = "Anker Soundcore Life Q30 Bluetooth Kablosuz Kulaklık - Hibrit Aktif Gürültü Önleyici ANC - Siyah - A3028 (Anker Türkiye Garantili)",
                     Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.",
-                    ImageFile = "product-6.png",
-                    Price = 8700.00M,
+                    ImageFile = "product-10.png",
+                    Price = 2000.00M,
                     CategoryId = 1
                 }
             };
